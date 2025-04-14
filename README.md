@@ -1,4 +1,42 @@
 # 598APE-HW3
+This repository contains optimized code for homework 3 of 598APE.
+
+You can select features by editing the Makefile, all optimizations are enabled by default.
+
+## Artifacts evaluation instructions
+
+We use  `./main.exe 10000 500` for evaluation, where `nplanets` is 10000 and `timesteps` is 500.
+
+### How to run
+
+For the results of Figure 1,
+
+```
+bash ae/3_openmp.sh
+```
+
+For the results of Table 1,
+
+```
+bash ae/0_original.sh
+bash ae/1_opt.sh
+bash ae/2_mem.sh
+bash ae/3_openmp.sh
+bash ae/4_final.sh  # Barnes-Hut Approximation
+```
+
+For the results of Figure 2 (in Appendix),
+
+```
+bash ae/analysis.sh
+cd analysis
+python plot.py  # It can take you more than twenty minutes; skip it if you don't want
+```
+
+---
+# Upstream
+
+# 598APE-HW3
 
 This repository contains code for homework 3 of 598APE.
 
